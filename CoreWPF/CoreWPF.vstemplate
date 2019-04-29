@@ -1,0 +1,33 @@
+<VSTemplate Version="2.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>.NET Core WPF Starter Template</Name>
+        <Description>A simple starter template that includes Caliburn.Micro and MaterialDesignKit</Description>
+        <Icon>icon.ico</Icon>
+        <ProjectType>WPF</ProjectType>
+        <ProjectSubType>CSharp</ProjectSubType>
+        <DefaultName>CoreWPF</DefaultName>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="CoreWPF/CoreWPF.csproj">
+            <ProjectItem ReplaceParameters="true">icon.ico</ProjectItem>
+            <ProjectItem ReplaceParameters="true" OpenInEditor="true">Bootstrapper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">App.xaml.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">App.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Bootstrapper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Styles/AppStyles.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Commands/SimpleCommand.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/IApplicationScreen.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Shell/IShell.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Shell/ShellViewModel.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Shell/ShellView.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Main/IMainScreen.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Main/MainViewModel.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Main/MainView.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Main/Page1/Page1ViewModel.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Main/Page1/Page1View.xaml</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Pages/Main/Page2/Page2ViewModel.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Pages/Main/Page2/Page2View.xaml</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>

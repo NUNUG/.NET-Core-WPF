@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using System;
 
-namespace CoreWPF.Pages.Shell
+namespace $safeprojectname$.Pages.Shell
 {
 	public class ShellViewModel : Conductor<IApplicationScreen>.Collection.OneActive, IShell
 	{

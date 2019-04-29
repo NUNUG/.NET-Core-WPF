@@ -1,7 +1,7 @@
 using System;
 using Caliburn.Micro;
 
-namespace CoreWPF.Pages.Main
+namespace $safeprojectname$.Pages.Main
 {
 	public interface IMainScreen : IScreen
 	{

@@ -1,4 +1,4 @@
-namespace CoreWPF.Pages.Shell
+namespace $safeprojectname$.Pages.Shell
 {
 	public interface IShell
 	{

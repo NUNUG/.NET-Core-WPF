@@ -2,14 +2,14 @@ using Caliburn.Micro;
 using System;
 using System.Collections.Generic;
 using System.Windows;
-using CoreWPF.Pages.Shell;
+using $safeprojectname$.Pages.Shell;
 using Unity;
-using CoreWPF.Pages;
-using CoreWPF.Pages.Main;
-using CoreWPF.Pages.Main.Page1;
-using CoreWPF.Pages.Main.Page2;
+using $safeprojectname$.Pages;
+using $safeprojectname$.Pages.Main;
+using $safeprojectname$.Pages.Main.Page1;
+using $safeprojectname$.Pages.Main.Page2;
 
-namespace CoreWPF
+namespace $safeprojectname$
 {
 	public class Bootstrapper : BootstrapperBase
 	{

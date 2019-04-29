@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Windows.Input;
 using System.Threading.Tasks;
 using Caliburn.Micro;
-using CoreWPF.Commands;
+using $safeprojectname$.Commands;
 
-namespace CoreWPF.Pages.Main
+namespace $safeprojectname$.Pages.Main
 {
 	public class MainViewModel : Conductor<IMainScreen>.Collection.OneActive, IApplicationScreen
 	{

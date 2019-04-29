@@ -1,6 +1,6 @@
 using System;
 
-namespace CoreWPF.Pages
+namespace $safeprojectname$.Pages
 {
 	public interface IApplicationScreen
 	{

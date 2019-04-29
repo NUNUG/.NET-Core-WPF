@@ -1,4 +1,4 @@
-<ContentControl x:Class="CoreWPF.Pages.Main.Page2.Page2View" 
+<ContentControl x:Class="$safeprojectname$.Pages.Main.Page2.Page2View" 
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 

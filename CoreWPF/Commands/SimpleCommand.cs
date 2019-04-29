@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Input;
 
-namespace CoreWPF.Commands
+namespace $safeprojectname$.Commands
 {
 #pragma warning disable CC0031 // Check for null before calling a delegate
 	public class SimpleCommand : ICommand
