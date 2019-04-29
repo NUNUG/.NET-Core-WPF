@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Windows;
 using CoreWPF.Pages.Shell;
 using Unity;
+using CoreWPF.Pages;
+using CoreWPF.Pages.Main;
 
 namespace CoreWPF
 {
@@ -24,6 +26,7 @@ namespace CoreWPF
 			Container.RegisterSingleton<IEventAggregator, EventAggregator>();
 
 			Container.RegisterSingleton<IShell, ShellViewModel>();
+			Container.RegisterSingleton<IApplicationScreen, MainViewModel>();
 		}
 
 		protected override object GetInstance(Type service, string key) => Container.Resolve(service, key);

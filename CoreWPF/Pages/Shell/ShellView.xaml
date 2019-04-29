@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="CoreWPF" Height="450" Width="800">
-    <Grid>
+    <!-- <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="1*"/>
@@ -13,5 +13,6 @@
         <Label Content="{Binding Title}" HorizontalAlignment="Center" VerticalAlignment="Center"
                FontSize="40"/>
 		<Button x:Name="ExitApp" Grid.Row="1" Content="Exit App" />
-    </Grid>
+    </Grid> -->
+	<ContentControl Name="ActiveItem" />
 </Window>
