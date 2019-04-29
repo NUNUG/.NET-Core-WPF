@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Caliburn.Micro" Version="4.0.0-alpha.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="2.5.1" />
     <PackageReference Include="Unity" Version="5.9.5" />
   </ItemGroup>
 

@@ -1,0 +1,30 @@
+<ContentControl x:Class="CoreWPF.Pages.Main.Page1.Page1View" 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:cal="http://www.caliburnproject.org"
+	xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes" mc:Ignorable="d">
+	<mat:Card Padding="35" Margin="35">
+		<StackPanel>
+			<TextBlock Text="{Binding DisplayName}" FontSize="18"
+					   Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" />
+			<TextBlock Text="How would you rate this presentation?" FontSize="14"
+					   Foreground="{DynamicResource PrimaryHueMidForegroundBrush}" />
+			<mat:RatingBar Max="5" Orientation="Horizontal" Value="{Binding Rating, Mode=TwoWay}"
+						cal:Message.Attach="[Event ValueChanged] = [Action RatingChanged]">
+				<mat:RatingBar.ValueItemTemplate>
+					<DataTemplate DataType="system:Int32">
+						<Grid>
+							<mat:PackIcon Kind="Heart" Height="24" Width="24" />
+							<TextBlock Text="{Binding}" HorizontalAlignment="Center"
+									   VerticalAlignment="Center" FontSize="8"
+									   Foreground="{DynamicResource PrimaryHueMidForegroundBrush}" />
+						</Grid>
+					</DataTemplate>
+				</mat:RatingBar.ValueItemTemplate>
+			</mat:RatingBar>
+		</StackPanel>
+	</mat:Card>
+</ContentControl>

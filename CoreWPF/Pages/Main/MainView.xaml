@@ -1,0 +1,30 @@
+<ContentControl x:Class="CoreWPF.Pages.Main.MainView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"
+	mc:Ignorable="d">
+		<mat:DrawerHost IsLeftDrawerOpen="{Binding IsMenuOpen}">
+			<mat:DrawerHost.LeftDrawerContent>
+				<ItemsControl ItemsSource="{Binding Items}">
+					<ItemsControl.ItemTemplate>
+						<DataTemplate>
+							<Button Content="{Binding DisplayName}" Margin="5"
+									Command="{Binding DataContext.SelectPage, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}}"
+									CommandParameter="{Binding }" />
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+				</ItemsControl>
+			</mat:DrawerHost.LeftDrawerContent>
+
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+				<mat:TransitioningContent OpeningEffect="{mat:TransitionEffect ExpandIn}" Name="ActiveItem" />
+				<Button Name="OpenDrawer" Content="Open Drawer" Grid.Row="1" />
+			</Grid>
+		</mat:DrawerHost>
+</ContentControl>

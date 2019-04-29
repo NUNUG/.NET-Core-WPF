@@ -3,15 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="CoreWPF" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="9*"/>
-            <RowDefinition Height="1*"/>
-        </Grid.RowDefinitions>
-        <Label Content="{Binding Title}" HorizontalAlignment="Center" VerticalAlignment="Center"
-               FontSize="40"/>
-		<Button x:Name="ExitApp" Grid.Row="1" Content="Exit App" />
-    </Grid>
+        Title="CoreWPF" Height="450" Width="800"
+		Background="{DynamicResource MaterialDesignPaper}">
+	<Grid>
+		<mat:TransitioningContent OpeningEffect="{mat:TransitionEffect ExpandIn}" Name="ActiveItem" />
+		<mat:Snackbar MessageQueue="{Binding MessageQueue}" />
+	</Grid>
 </Window>
