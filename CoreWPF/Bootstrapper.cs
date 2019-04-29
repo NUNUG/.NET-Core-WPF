@@ -6,6 +6,8 @@ using CoreWPF.Pages.Shell;
 using Unity;
 using CoreWPF.Pages;
 using CoreWPF.Pages.Main;
+using CoreWPF.Pages.Main.Page1;
+using CoreWPF.Pages.Main.Page2;
 
 namespace CoreWPF
 {
@@ -27,6 +29,9 @@ namespace CoreWPF
 
 			Container.RegisterSingleton<IShell, ShellViewModel>();
 			Container.RegisterSingleton<IApplicationScreen, MainViewModel>();
+
+			Container.RegisterSingleton<IMainScreen, Page1ViewModel>("Page1");
+			Container.RegisterSingleton<IMainScreen, Page2ViewModel>("Page2");
 		}
 
 		protected override object GetInstance(Type service, string key) => Container.Resolve(service, key);
